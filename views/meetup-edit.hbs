@@ -1,0 +1,27 @@
+<h1>Edit meetup</h1>
+
+<form action="/meetup/edit" method="post">
+  <div class="input-field">
+    <input id="title" name="title" type="text" class="validate" required value="{{meetup.title}}">
+    <label for="title">Meetup title</label>
+    <span class="helper-text" data-error="Insert the title"></span>
+  </div>
+  <div class="input-field">
+    <input id="description" name="description" type="text" class="validate" required min="1" value="{{meetup.description}}">
+    <label for="description">Description</label>
+    <span class="helper-text" data-error="Insert the description"></span>
+  </div>
+  <div class="input-field">
+    <input id="tags" name="tags" type="text" class="validate" required min="1" value="{{meetup.tags}}">
+    <label for="tags">Tags</label>
+    <span class="helper-text" data-error="Insert the tags"></span>
+  </div>
+  <div class="input-field">
+    <input id="date" name="date" type="date" class="validate" required min="1" value="{{meetup.date}}">
+    <label for="date">Date</label>
+    <span class="helper-text" data-error="Insert the date"></span>
+  </div>
+  <input id="id" name="id" type="hidden" class="validate" required value="{{meetup.id}}">
+
+  <button class="btn btn-primary" type="submit">Edit meetup</button>
+</form>

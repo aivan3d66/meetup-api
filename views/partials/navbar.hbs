@@ -1,0 +1,24 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">MEETUPS</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{#if isHome}}
+        <li class="active"><a href="/">Main page</a></li>
+      {{else}}
+        <li><a href="/">Main page</a></li>
+      {{/if}}
+
+      {{#if isMeetups}}
+        <li class="active"><a href="/meetup">Meetups</a></li>
+      {{else}}
+        <li><a href="/meetup">Meetups</a></li>
+      {{/if}}
+
+      {{#if isAddMeetup}}
+        <li class="active"><a href="/addMeetup">Add meetup</a></li>
+      {{else}}
+        <li><a href="/addMeetup">Add meetup</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

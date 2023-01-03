@@ -1,0 +1,18 @@
+<div class="col s6 offset-s3">
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{meetup.title}}</span>
+      <p class="date">{{meetup.date}}</p>
+    </div>
+    <div class="card-content">
+      <p class="description">{{meetup.description}}</p>
+    </div>
+    <div class="card-content">
+      <p class="tags">#{{meetup.tags}}</p>
+    </div>
+    <div class="card-action actions">
+      <a href="/meetup/{{meetup.id}}/edit?allow=true">Edit</a>
+      <button class="btn btn-small js-remove" data-id="{{meetup.id}}">Delete</button>
+    </div>
+  </div>
+</div>
